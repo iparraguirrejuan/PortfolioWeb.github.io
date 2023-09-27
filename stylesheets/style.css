@@ -1,0 +1,419 @@
+* {
+  background-color: #1A1D1A;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #1A1D1A;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 500px) {
+  .containerButton a .cvButton {
+    margin-bottom: 10px;
+  }
+  .containerButton a .contactoButton {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 593px) {
+  .d-md-none {
+    display: block !important;
+  }
+  .navbar {
+    display: none !important;
+  }
+}
+@media (min-width: 592px) {
+  .navbar {
+    display: block !important;
+  }
+  .d-md-none {
+    display: none !important;
+  }
+}
+.nav-link {
+  margin: 1px;
+}
+
+.nav-item .nav-link.active {
+  color: #8AB0AB;
+  font-family: "Roboto Slab", serif;
+}
+
+.barra {
+  margin-right: 20px;
+}
+
+.nav-item .btn {
+  background-color: #1A1D1A;
+  text-decoration: none;
+  border: none;
+  margin: -14px;
+  align-items: center;
+}
+
+.nav-item .btn-primary {
+  border: none;
+  align-items: center;
+}
+
+.btn img {
+  width: 28px;
+}
+
+ul.nav {
+  margin: 0;
+}
+
+.barra ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.barra ul li a:hover {
+  color: #8AB0AB;
+  border-bottom: 1px solid #8AB0AB;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#btn-dropMenu {
+  background-color: #8AB0AB;
+  border-radius: 20px;
+  padding: 9.6px 32px 8px 32px;
+  color: #292929;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  margin-right: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.offcanvas-header h5 {
+  color: #8AB0AB;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.offcanvas-body li a {
+  text-decoration: none;
+  color: white;
+  font: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.offcanvas-body ul li:hover {
+  color: #8AB0AB;
+  border-bottom: 1px solid #8AB0AB;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.saludo h3 {
+  margin-top: 75px;
+  font-size: 32px;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  margin-left: 15px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.nombre h1 {
+  margin-left: 15px;
+  font-size: 56px;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  color: white;
+}
+
+.titulo h3 {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 32px 0;
+  width: 460px;
+  letter-spacing: 1px;
+  color: #8AB0AB;
+}
+
+.textoInfo p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  margin-left: 15px;
+}
+
+.containerButton a .cvButton, .containerButton a .contactoButton {
+  background-color: #8AB0AB;
+  border-radius: 20px;
+  padding: 9.6px 32px 8px 32px;
+  color: #292929;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  margin-right: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.containerFooter {
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+footer span {
+  font-size: 12px;
+  justify-content: center;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a img {
+  width: 25px;
+  height: 25px;
+}
+
+.textFooter {
+  font-size: 12px;
+  justify-content: center;
+  color: white;
+}
+
+.titleSobreMi {
+  overflow: hidden;
+}
+
+.titleSobreMi span {
+  text-align: start;
+  font-size: 32px;
+  letter-spacing: 1px;
+  display: block;
+  font-family: "Roboto Slab", serif;
+}
+
+.textSobreMi {
+  text-align: start;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  line-height: 23px;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.sobreMi h2 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  color: white;
+  font-size: 38px;
+  letter-spacing: 2px;
+  padding: 3px 0 4px 0;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .cardProyecto {
+    width: 18rem;
+  }
+}
+.proyectos h2 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  color: white;
+  font-size: 38px;
+  letter-spacing: 2px;
+  padding: 3px 0 4px 0;
+  margin-bottom: 20px;
+}
+
+.cardProyecto {
+  margin-left: 30px;
+  box-shadow: 0 0 16px 2px #8AB0AB;
+  border: 2px solid #8AB0AB;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: auto;
+  width: auto;
+}
+
+.card-title {
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0;
+  font-size: 30px;
+  color: #8AB0AB;
+  font-weight: bold;
+  display: inline;
+}
+
+.card-text {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+#calculadoraAntropometrica p {
+  font-size: 14px;
+}
+
+.buttonDemo,
+.buttonRepo {
+  border-radius: 15px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 1.6px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  max-height: fit-content;
+  font-weight: bold;
+}
+
+.buttonDemo img,
+.buttonRepo img {
+  width: 25px;
+  margin-right: 5px;
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.buttonDemo:hover,
+.buttonRepo:hover {
+  background: #141414;
+  box-shadow: 0 13px 33px -14px;
+  transition: all 1s ease;
+  color: #8AB0AB;
+}
+
+.formacion h2 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  color: white;
+  font-size: 38px;
+  letter-spacing: 2px;
+  padding: 3px 0 4px 0;
+  margin-bottom: 20px;
+}
+
+.titleUnlam,
+.titleEdu {
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 5px;
+  max-width: fit-content;
+}
+
+.subtitleUnlam,
+.subtitleEdu {
+  color: white;
+  margin-top: 5px;
+}
+
+.textUnlam,
+.textEdu {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.habilidades h2 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  color: white;
+  font-size: 38px;
+  letter-spacing: 2px;
+  padding: 3px 0 4px 0;
+  margin-bottom: 20px;
+}
+
+.cardsHabilidades {
+  background-color: #1A1D1A;
+  border-radius: 24px;
+  border: 2px solid #8AB0AB;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 208px;
+  height: auto;
+}
+
+.card-img-top img {
+  margin-top: 11.2px;
+  height: 50px;
+  width: 70%;
+  border: 2px;
+}
+
+.contacto h2 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  color: white;
+  font-size: 38px;
+  letter-spacing: 2px;
+  padding: 3px 0 4px 0;
+  margin-bottom: 20px;
+}
+
+#inputName,
+#inputEmail,
+#inputSubject,
+#inputMessage {
+  background-color: rgba(138, 176, 171, 0.5333333333);
+  color: white;
+}
+
+.btnEnviar {
+  border-radius: 15px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 1.6px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  max-height: fit-content;
+  font-weight: bold;
+  background-color: #8AB0AB;
+  color: #292929;
+  border: 2px solid #3E505B;
+}
+
+.btnEnviar:hover {
+  background-color: #3E505B;
+  box-shadow: 0px 13px 33px -14px;
+  transition: all 0.4s ease;
+  color: #292929;
+}
+
+/*# sourceMappingURL=style.css.map */

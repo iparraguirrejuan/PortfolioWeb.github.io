@@ -1,0 +1,505 @@
+
+//variables 
+$withe: white;
+$lightGrey:#D9D9D9;
+$charcoal: #3E505B;
+$black:#141414;
+$eerieBlack: #1A1D1A;
+$jet:#292929;
+$darkSlateGrey:#26413C;
+$cambridgeBlue:#8AB0AB;
+$roboto: "Roboto", sans-serif;
+$robotoSlab:"Roboto Slab", serif;
+$navBlock: block !important;
+$navNone: none !important;
+$border: 2px solid #8AB0AB;
+
+
+//mixin 
+@mixin hover{
+    color:$cambridgeBlue;
+    border-bottom: 1px solid $cambridgeBlue;
+    font-weight: bold;
+    transition: .4s;
+}
+
+
+@mixin hoverButtonProject{
+    background:$black;
+    box-shadow: 0 13px 33px -14px;
+    transition: all 1s ease;
+    color: $cambridgeBlue;
+}
+
+@mixin buttonProject{
+    border-radius: 15px;
+    color:$withe;
+    font-family: $robotoSlab;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    max-height: fit-content;
+    font-weight: bold;
+}
+
+@mixin buttonProjectImg{
+    width: 25px;
+    margin-right: 5px;
+    text-align: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+@mixin button{
+    background-color: $cambridgeBlue;
+    border-radius: 20px;
+    padding: 9.6px 32px 8px 32px;
+    color: $jet;
+    font-family: $robotoSlab;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+@mixin title{
+    font-family: $robotoSlab;
+    text-align: center;
+    color:$withe;
+    font-size: 38px;
+    letter-spacing: 2px;
+    padding: 3px 0 4px 0;
+    margin-bottom: 20px;
+}
+
+*{
+    background-color: $eerieBlack;
+    color:$withe;
+    padding:0;
+    margin:0;
+    font-family: $roboto;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: $eerieBlack;
+    font-family: $roboto;
+}
+
+// Media queries 
+@media (max-width: 500px) {
+    .containerButton a .cvButton {
+      margin-bottom: 10px;
+    }
+    .containerButton a .contactoButton {
+      margin-left: 15px;
+    }
+}
+
+// Mostrar barra de la navegacio en tamaños de pantalla mayores a 768px
+@media (max-width: 593px) {
+    .d-md-none {
+      display: $navBlock
+    }
+    .navbar {
+      display: $navNone
+    }
+}
+@media (min-width: 592px) {
+    .navbar {
+      display: $navBlock
+    }
+    .d-md-none {
+      display: $navNone
+    }
+}
+
+//NavBar
+.nav-link{
+    margin:1px;
+}
+
+.nav-item .nav-link.active{
+    color:$cambridgeBlue;
+    font-family: $robotoSlab;
+}
+
+.barra{
+    margin-right: 20px;
+}
+
+.nav-item .btn{
+    background-color: $eerieBlack;
+    text-decoration: none;
+    border:none;
+    margin: -14px;
+    align-items: center;
+    
+}
+
+.nav-item .btn-primary{
+    border:none;
+    align-items: center;
+}
+
+.btn img{
+    width: 28px;
+}
+
+ul.nav {
+    margin: 0;
+}
+
+.barra{
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color:$withe;
+                font-family: $robotoSlab;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.barra {
+    ul{
+        li{
+            a:hover{
+                @include hover;
+            }
+        }
+    }
+}
+
+//Dropdown menu
+#btn-dropMenu{
+    background-color: $cambridgeBlue;
+    border-radius: 20px;
+    padding: 9.6px 32px 8px 32px;
+    color:$jet;
+    font-family: $robotoSlab;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 10px;
+    
+}
+
+//Estilos para el menu desplegable
+.offcanvas-header {
+    h5{
+        color:$cambridgeBlue;
+        font-family: $robotoSlab;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
+
+.offcanvas-body {
+    li{
+        a{
+            text-decoration: none;
+            color:$withe;
+            font: $robotoSlab;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
+
+.offcanvas-body{
+    ul{
+        li:hover{
+            @include hover;
+        }
+    }
+}
+
+//Home 
+.saludo{
+    h3{
+        margin-top: 75px;
+        font-size: 32px;
+        font-family: $robotoSlab;
+        font-weight: bold;
+        margin-left: 15px;
+        color:$withe;
+        letter-spacing: 1px;
+    }
+}
+
+.nombre{
+    h1{
+        margin-left: 15px;
+        font-size: 56px;
+        font-family: $robotoSlab;
+        font-weight: bold;
+        color:$withe;
+    }
+}
+
+.titulo{
+    h3{
+        font-size: 28px;
+        font-family: $roboto;
+        margin:0 0 32px 0;
+        width: 460px;
+        letter-spacing: 1px;
+        color: $cambridgeBlue;
+
+    }
+}
+
+.textoInfo {
+    p{
+        font-family: $roboto;
+        color:$withe;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        line-height: 20px;
+        margin-left: 15px;
+    }
+}
+
+.containerButton {
+    a{
+        .cvButton, .contactoButton{
+            @include button;
+        }
+    }
+}
+
+//footer
+.containerFooter{
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+footer {
+    span{
+        font-size: 12px;
+        justify-content: center;
+        color:$withe;
+    }
+}
+
+footer{
+    a{
+        text-decoration: none;
+    }
+}
+
+footer{
+    a{
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+.textFooter{
+    font-size: 12px;
+    justify-content: center;
+    color:$withe;
+}
+
+// Sobre Mi 
+.titleSobreMi{
+    overflow: hidden;
+}
+
+.titleSobreMi{
+    span{
+        text-align: start;
+        font-size: 32px;
+        letter-spacing: 1px;
+        display: block;
+        font-family: $robotoSlab;
+    }
+}
+
+.textSobreMi{
+    text-align: start;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    line-height: 23px;
+    overflow: hidden;
+    font-family: $roboto;
+}
+
+.sobreMi{
+    h2{
+        @include title;
+    }
+}
+
+// Proyectos
+@media (max-width: 768px) {
+    .cardProyecto{
+        width: 18rem;
+    }
+}
+
+.proyectos{
+    h2{
+        @include title;
+    }
+}
+
+.cardProyecto{
+    margin-left: 30px;
+    box-shadow: 0 0 16px 2px $cambridgeBlue;
+    border: $border;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: auto;
+    width: auto;
+}
+
+
+.card-title{
+    font-family: $robotoSlab;
+    letter-spacing: 0;
+    font-size: 30px;
+    color:$cambridgeBlue;
+    font-weight: bold;
+    display: inline;
+    
+}
+.card-text{
+    color:$withe;
+    font-family: $roboto;
+    letter-spacing: 1px;
+    font-size: 15px; 
+}
+
+#calculadoraAntropometrica{
+    p{
+        font-size: 14px;
+    }
+}
+
+.buttonDemo,
+.buttonRepo{
+    @include buttonProject;
+}
+
+.buttonDemo,
+.buttonRepo{
+    img{
+        @include buttonProjectImg;
+    }
+}
+
+.buttonDemo:hover,
+.buttonRepo:hover{
+    @include hoverButtonProject;
+}
+
+// Formacion
+
+.formacion{
+    h2{
+        @include title;
+    }
+}
+
+
+.titleUnlam,
+.titleEdu{
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 5px;
+    max-width: fit-content;
+}
+
+.subtitleUnlam,
+.subtitleEdu{
+    color: $withe;
+    margin-top: 5px;
+}
+
+.textUnlam,
+.textEdu{
+    color: $withe;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+// Habilidades
+.habilidades{
+    h2{
+        @include title;
+    }
+}
+
+.cardsHabilidades{
+    background-color: $eerieBlack;
+    border-radius: 24px;
+    border: $border;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 208px;
+    height: auto;
+}
+
+.card-img-top img{
+    margin-top: 11.2px;
+    height: 50px;
+    width: 70%;
+    border: 2px;
+}
+
+// Contacto 
+.contacto{
+    h2{
+        @include title;
+    }
+}
+
+#inputName,
+#inputEmail,
+#inputSubject,
+#inputMessage{
+    background-color: rgba($cambridgeBlue, 0.5333333333);
+    color: $withe;
+}
+
+.btnEnviar{
+ @include buttonProject;
+ background-color: $cambridgeBlue;
+ color: $jet;
+ border: 2px solid $charcoal;
+
+}
+
+.btnEnviar:hover{
+    background-color: $charcoal;
+    box-shadow: 0px 13px 33px -14px;
+    transition: all .4s ease;
+    color:$jet;
+}
